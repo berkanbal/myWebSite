@@ -20,12 +20,12 @@ body{
   img{
     max-width: 450px;
     max-height: 450px;
-    width: 200%;
+    width: 170%;
     
   }
 
-  section{
-    padding: 100px 0;
+  .section{
+    padding: 10% 0;
     background: #dcdcdd;
     
   }
@@ -105,6 +105,7 @@ body{
     width: 100%;
     height: 56px;
     z-index: 5;
+    
   }
 
   .navbar{
@@ -113,7 +114,7 @@ body{
     align-items: center;
     margin: 0 auto;
     width: 93%;
-    padding: 3px 0;
+    padding: 3px 0; 
   }
 
   .nav_links{
@@ -151,12 +152,11 @@ body{
     margin: 40px auto;
     width: 65%;
     color: #fff;
+    
   }
 
   .child_anasayfa{
     flex-basis: 35%;
-    
-
   }
   .child_anasayfa h1{
     font-size: 50px;
@@ -221,10 +221,11 @@ body{
 
   /************** FOOTER**********/
 
-  footer{
+  .footer{
     background: rgb(49, 49, 49);
     padding: 60px 20px 0;
     color: #fff;
+    bottom: 0;
   }
 
   .inner_footer{
@@ -241,7 +242,7 @@ body{
   }
 
   .child_footer h3{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     font-size: 25px;
   }
 
@@ -322,12 +323,15 @@ body{
       border-radius: 0;
       
     }
+
+    .section{
+      
+      place-items: center;
+      text-align: center;
+      width: 100%;
+
+    }
     
-
-    
-
-   
-
     .inner_anasayfa{
       display: grid;
       gap: 30px;
@@ -335,9 +339,19 @@ body{
       
     }
 
+    .child_anasayfa h1{
+      font-size: 40px;
+    }
+    .child_anasayfa p{
+      font-size: 15px;
+    }
+
     img{ 
-      width: 350px;
+      width: 250px;
       
+    }
+    .section_title{
+      width: 100%;
     }
 
     .inner_hakkimda{
@@ -346,11 +360,26 @@ body{
       width: 70%;
       padding: 10px auto;
       
+      
     }
 
     .inner_hakkimda h3 {
       text-align: center;
     }
 
+    i{
+      font-size: 35px;
+      padding: 10px;
+    }
+
+    .email{
+      font-size: 15px;
+      margin-top: 20px;
+    }
+
+    .child_footer h3{
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
 
   }
