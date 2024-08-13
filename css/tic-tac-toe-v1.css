@@ -5,6 +5,11 @@
     user-select: none;
 }
 
+.header{
+    top: 0;
+    margin-top: 0;
+}
+
 .align{
     display: flex;
     justify-content: center;
@@ -19,6 +24,8 @@ body{
     width: 100vw;
     text-align: center;
     padding-top: 2%;
+    font-family: "Oswald", sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -65,7 +72,7 @@ body{
     grid-template-rows: repeat(3,1fr);
     height: 300px;
     width: 300px;
-    margin: 80px auto;
+    margin: 60px auto;
     border: 2px solid rgb(60, 60, 60);
 
 }
@@ -100,4 +107,10 @@ body{
     padding: 10px 20px;
     background-color: rgb(255, 97, 40);
     color: lightgrey;
+}
+
+.xox_page_middle{
+    margin-top: 60px;
+    padding-bottom: 40px;
+    
 }
