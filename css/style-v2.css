@@ -22,6 +22,7 @@ body{
     max-height: 450px;
     width: 170%;
     
+    
   }
 
   .section{
@@ -326,16 +327,16 @@ body{
 
     .section{
       
+      
+      display: grid;
       place-items: center;
-      text-align: center;
-      width: 100%;
 
     }
     
     .inner_anasayfa{
       display: grid;
       gap: 30px;
-      place-items: center;
+      justify-content: center;
       
     }
 
