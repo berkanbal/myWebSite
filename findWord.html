@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berkan Bal</title>
+    <link rel="stylesheet" href="css/findWord-style.css">
+    <title>Kelime Bul - Berkan Bal</title>
     <link rel="stylesheet" href="css/style-v2.css">
     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
 </head>
 <body>
+      
     <header class="header">
         <div class="navbar">
             <div class="logo">
@@ -29,46 +30,19 @@
             </ul>
         </div>
     </header>
-
-    <!-----------ANASAYFA------------> 
-    <div class="section" id="anasayfa">
-        <div class="inner_anasayfa">
-            <div class="child_anasayfa">
-                <h1>BERKAN BAL</h1>
-                <p>Bilgisayar Mühendisliği Ögrencisi</p>
-            </div>
-            <div class="child_anasayfa">
-                <img src="img/123.png" alt="" > 
-             </div>
+    
+    <button style=" margin-top: 50px; border:transparent; background: transparent; width: 15%; max-width: 50px; cursor: pointer;" id="keyboard-icon">
+        <img style="width: 100%; " src="img/keyboard.png" alt="Klavyeyi Aç">
+      </button>
+      <input  id="hidden-input" type="text" style="position:absolute; left:-9999px;">
+    
+    <div style="height: 550px;" id="game">
+        <div class="grid">
+           
         </div>
-        
-    </div>
-    <!------------ HAKKIMDA ----------->
-    <div class="section" id="hakkimda">
-        <div class="section_title">
-            <h2>HAKKIMDA</h2>
-        </div>
-        <div class="inner_hakkimda">
-            <div class="innerhakkimda_child">
-                <h3>HAKKIMDA</h3>
-                <p>Takım çalışmalarına uyumlu ve her gün kendini geliştirmeye çalışan biriyim.</p>
-            </div>
-
-            <div class="innerhakkimda_child">
-                <h3>YAZILIM</h3>
-                <p>C , C# , <br> HTML , CSS</p>
-            </div>
-
-            <div class="innerhakkimda_child">
-                <h3>EĞİTİM</h3>
-                <p>Manavgat Anadolu Lisesi Mezunu <br>Tekirdağ Namık Kemal Üniversitesi Bilgisayar Mühendisliği 4.Sınıf</p>
-            </div>
-
-        </div>
-
     </div>
 
-    <!--------------FOOTER------------->
+
     <div class="footer" id="hesaplarim">
         <div class="inner_footer">
             <div class="child_footer">
@@ -91,7 +65,11 @@
         </div>
     </div>
 
-    
-    
+
+
+
+    <script src="wordle.js" type="module">  </script>
 </body>
+
+
 </html>
