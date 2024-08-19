@@ -146,17 +146,17 @@ function revealWord(guess){
     const row = state.currentRow;
     const animation_duration = 500;
 
-    // Track the count of each letter in the secret word
+    
     const secretLetterCount = {};
     for (let i = 0; i < 5; i++) {
         const letter = state.secret[i];
         secretLetterCount[letter] = (secretLetterCount[letter] || 0) + 1;
     }
 
-    // Track which boxes are marked correctly
+    
     const markedAsCorrect = new Array(5).fill(false);
 
-    // First pass to mark correct letters and prepare for second pass
+   
     for (let i = 0; i < 5; i++) {
         const box = document.getElementById(`box${row}${i}`);
         const letter = box.textContent;
@@ -173,7 +173,7 @@ function revealWord(guess){
         box.style.animationDelay = `${(i * animation_duration) / 2}ms`;
     }
 
-    // Second pass to mark wrong letters (doing in the same loop)
+    
     for (let i = 0; i < 5; i++) {
         const box = document.getElementById(`box${row}${i}`);
         const letter = box.textContent;
