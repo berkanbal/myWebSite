@@ -203,6 +203,7 @@ function revealWord(guess){
         if (isWinner) {
             alert('Tebrikler! Kelimeyi Buldunuz.');
         } else if (isGameOver) {
+            state.secret = state.secret.toLocaleUpperCase();
             alert(`Kelime: ${state.secret}. Bir Dahaki Sefere İyi Şanslar.`);
         }
     }, 3 * animation_duration);
@@ -215,6 +216,7 @@ function isLetter(key){
 
 function addLetter(letter){
     if (state.currentCol === 5) return;
+    letter = letter.toLocaleLowerCase();
     state.grid[state.currentRow][state.currentCol] = letter;
     state.currentCol++;
 }
